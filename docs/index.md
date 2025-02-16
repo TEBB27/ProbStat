@@ -3,23 +3,32 @@
 layout: home
 
 hero:
-  name: "probstat"
+  name: "Notas de Probabilidad y Estadística"
   text: "probstat desccription"
-  tagline: My great project tagline
+  tagline: Sin datos, eres solo otra persona con una opinión – W. Edwards Deming
   actions:
     - theme: brand
-      text: Markdown Examples
+      text: Introducción
       link: /markdown-examples
     - theme: alt
-      text: API Examples
+      text: Estadístia Descriptiva
+      link: /api-examples
+    - theme: alt
+      text: Probabilidad
+      link: /api-examples
+    - theme: alt
+      text: Inferencia
       link: /api-examples
 
 features:
-  - title: Feature A
+  - icon: 📘
+    title: PARTE I - Estadística Descriptiva
+    details: Población vs. Muestra, Parámetro vs. Estadístico, Estadística Descriptiva vs. Inferencial, Origen de un Proyecto, Planteamiento Cuantitativo, Gráficos, Resúmenes Numéricos, Datos Bivariados.
+  - title: PARTE II - Probabilidad
+    icon: 📕
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
+  - title: Parte III - Inferencia
+    icon: 📗
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
 ---
 

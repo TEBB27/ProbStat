@@ -2,13 +2,14 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "probstat",
-  description: "probstat desccription",
+  title: "Probabilidad y Estadística 🚀",
+  description: "Conjunto de apuntes y notas del curso de probbabilidad funamental para ingenieros industriales",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' }
+      { text: 'Inicio', link: '/' },
+      { text: 'Temas', link: '/markdown-examples' },
+      { text: 'Equipo', link: '/markdown-examples' }
     ],
 
     sidebar: [
@@ -22,7 +23,9 @@ export default defineConfig({
     ],
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
+      { icon: 'github', link: 'https://github.com/TEBB27' },
+      { icon: 'instagram', link: 'https://instagram.com/tebb2722' },
+      { icon: 'x', link: 'https://x.com/tebb_27' }
     ]
   }
 })
