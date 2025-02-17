@@ -4,17 +4,13 @@ layout: home
 
 hero:
   name: "Notas de Probabilidad y Estadística"
-  text: "probstat desccription"
   tagline: Sin datos, eres solo otra persona con una opinión – W. Edwards Deming
-  image:
-    src: /images/pinterest.webp
-    alt: pinteest
   actions:
     - theme: brand
       text: Introducción
       link: /markdown-examples
     - theme: alt
-      text: Estadístia Descriptiva
+      text: Estadística Descriptiva
       link: /api-examples
     - theme: alt
       text: Probabilidad
@@ -24,29 +20,31 @@ hero:
       link: /api-examples
 
 features:
-  - icon: 📘
-    title: PARTE I - Estadística Descriptiva
-    details: Población vs. Muestra, Parámetro vs. Estadístico, Estadística Descriptiva vs. Inferencial, Origen de un Proyecto, Planteamiento Cuantitativo, Gráficos, Resúmenes Numéricos, Datos Bivariados.
-  - title: PARTE II - Probabilidad
+  - icon: 📒
+    title: Conceptos Iniciales
+    details: Población vs. Muestra, Parámetro vs. Estadístico, Estadística Descriptiva vs. Inferencial, Origen de un Proyecto, Planteamiento Cuantitativo.
+  - title: Medidas de resúmen
     icon: 📕
-    details: Necesidad, Conceptos Básicos, Conteo, Probabilidad Uniones-Intersecciones, Regla de Bayes, Intro a Distribuciones Discretas, Distribución Binomial, Distribución de Poisson, Distribución Hipergeométrica, Intro a Distribuciones Continuas, Distribución Normal, Aproximación Normal.
+    details: Gráficos, Resúmenes Numéricos, Datos Bivariados.
+  - title: Rudimientos
+    icon: 📘
+    details: Necesidad, Conceptos Básicos, Conteo, Probabilidad Uniones-Intersecciones, Regla de Bayes.
   - title: Parte III - Inferencia
     icon: 📗
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
   - title: Parte III - Inferencia
-    icon: 📗
+    icon: 👨🏻‍🎓
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
   - title: Parte III - Inferencia
-    icon: 📗
+    icon: 👨🏻‍🏫
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
   - title: Parte III - Inferencia
-    icon: 📗
+    icon: 🚀
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
   - title: Parte III - Inferencia
-    icon: 📗
+    icon: 💵
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Parte III - Inferencia
-    icon: 📗
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+
+footer: true
 ---
 
