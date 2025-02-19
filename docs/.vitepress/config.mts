@@ -5,6 +5,19 @@ export default defineConfig({
   markdown: {
     math: true
   },
+  locales: {
+    root: {
+      label: 'Spanish',
+      lang: 'es'
+    },
+    fr: {
+      label: 'English',
+      lang: 'fr', // optional, will be added  as `lang` attribute on `html` tag
+      link: '/fr/guide' // default /fr/ -- shows on navbar translations menu, can be external
+
+      // other locale specific properties...
+    }
+  },
 
   title: "Probabilidad y Estadística 🚀",
   description: "Conjunto de apuntes y notas del curso de probbabilidad funamental para ingenieros industriales",
