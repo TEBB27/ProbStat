@@ -41,7 +41,12 @@ export default defineConfig({
               { text: 'Poisson', link: '/src/probability/discrete-distributions/poisson' },
               { text: 'Hipergeométrica', link: '/src/probability/discrete-distributions/hypergeometric' }
           ]},
-          { text: 'Runtime API Examples', link: '/api-examples' }
+          {text:'Distribuciones Continuas',
+            items: [
+              { text: 'Introducción', link: '/src/probability/continous-distributions/introduction' },
+              { text: 'Normal', link: '/src/probability/continous-distributions/normal' },
+              { text: 'Aproximación Normal', link: '/src/probability/continous-distributions/normal-approximation' }
+          ]},
         ]
       },
       {

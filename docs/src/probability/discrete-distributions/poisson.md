@@ -46,3 +46,8 @@ La distribución de Poisson es útil en situaciones donde los eventos ocurren al
 
 - **Relación con la distribución exponencial:** Si el número de eventos en un intervalo de tiempo sigue una distribución de Poisson con tasa \( \lambda \), entonces el tiempo entre eventos sigue una distribución exponencial con parámetro \( \lambda \):
   $$ T \sim \text{Exp}(\lambda) $$
+
+
+
+
+
