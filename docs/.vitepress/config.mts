@@ -7,13 +7,13 @@ export default defineConfig({
   },
   locales: {
     root: {
-      label: 'Spanish',
+      label: 'Español',
       lang: 'es'
     },
     fr: {
       label: 'English',
-      lang: 'fr', // optional, will be added  as `lang` attribute on `html` tag
-      link: '/fr/guide' // default /fr/ -- shows on navbar translations menu, can be external
+      lang: 'En', // optional, will be added  as `lang` attribute on `html` tag
+      link: '/en/guide' // default /fr/ -- shows on navbar translations menu, can be external
 
       // other locale specific properties...
     }
