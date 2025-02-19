@@ -10,13 +10,6 @@ export default defineConfig({
       label: 'Español',
       lang: 'es'
     },
-    fr: {
-      label: 'English',
-      lang: 'En', // optional, will be added  as `lang` attribute on `html` tag
-      link: '/en/guide' // default /fr/ -- shows on navbar translations menu, can be external
-
-      // other locale specific properties...
-    }
   },
 
   title: "Probabilidad y Estadística 🚀",
