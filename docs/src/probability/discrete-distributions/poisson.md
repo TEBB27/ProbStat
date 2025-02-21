@@ -4,7 +4,7 @@ La distribución de Poisson es una distribución de probabilidad discreta que mo
 
 ## Definición
 
-Sea \( X \) una variable aleatoria que sigue una distribución de Poisson con parámetro \( \lambda \), denotado como:
+Sea \( X \) una variable aleatoria que sigue una distribución de Poisson con parámetro <span>&lambda;</span>, denotado como:
 
 $$ X \sim \text{Poisson}(\lambda) $$
 
@@ -13,7 +13,7 @@ Su función de masa de probabilidad (PMF) está dada por:
 $$ P(X = k) = \frac{\lambda^k e^{-\lambda}}{k!}, \quad k = 0, 1, 2, \dots $$
 
 donde:
-- \( \lambda > 0 \) es el parámetro de la distribución, que representa la media y la varianza.
+- <span>&lambda;</span> > 0 es el parámetro de la distribución, que representa la media y la varianza.
 - \( e \) es la base del logaritmo natural, aproximadamente 2.718.
 - \( k! \) es el factorial de \( k \).
 
@@ -41,13 +41,17 @@ La distribución de Poisson es útil en situaciones donde los eventos ocurren al
 
 ## Relación con otras distribuciones
 
-- **Aproximación de Poisson a la binomial:** Si \( X \sim \text{Bin}(n, p) \) con \( n \) grande y \( p \) pequeño, entonces:
+- **Aproximación de Poisson a la binomial:** 
+  Si:
+    $$ X \sim \text{Bin}(n, p) $$ 
+  con \( n \) grande y \( p \) pequeño, entonces:
   $$ X \approx \text{Poisson}(\lambda), \quad \text{donde } \lambda = np $$
 
-- **Relación con la distribución exponencial:** Si el número de eventos en un intervalo de tiempo sigue una distribución de Poisson con tasa \( \lambda \), entonces el tiempo entre eventos sigue una distribución exponencial con parámetro \( \lambda \):
+- **Relación con la distribución exponencial:** Si el número de eventos en un intervalo de tiempo sigue una distribución de Poisson con tasa <span>&lambda;</span>, entonces el tiempo entre eventos sigue una distribución exponencial con parámetro <span>&lambda;</span>:
   $$ T \sim \text{Exp}(\lambda) $$
 
+## Recursos Adicionales
 
-
-
-
+<div style="display: flex; justify-content: center; align-items: center; margin: 20px 0;">
+    <iframe src="https://drive.google.com/file/d/1U4YSnLEzuFSO6j13KhM8AW0tAwwdq7uO/preview" style="width: 100%; max-width: 800px; height: 600px; border: 1px solid #ccc; border-radius: 8px;"></iframe>
+</div>

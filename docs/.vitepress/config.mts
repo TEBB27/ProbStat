@@ -13,8 +13,11 @@ export default defineConfig({
   },
 
   title: "Probabilidad y Estadística 🚀",
-  description: "Conjunto de apuntes y notas del curso de probbabilidad funamental para ingenieros industriales",
+  description: "Conjunto de apuntes y notas del curso de probabilidad funamental para ingenieros industriales",
   themeConfig: {
+    search: {
+      provider: 'local'
+    },
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Inicio', link: '/' },
