@@ -33,6 +33,13 @@ export default defineConfig({
       {
         text: 'Estadística Descriptiva',
         items: [
+          {text:'Conceptos iniciales',
+            items: [
+              { text: 'Población vs Muestra', link: '/src/descriptive-statistic/initial-concepts/sample' },
+              { text: 'Binomial', link: '/src/probability/discrete-distributions/binomial' },
+              { text: 'Poisson', link: '/src/probability/discrete-distributions/poisson' },
+              { text: 'Hipergeométrica', link: '/src/probability/discrete-distributions/hypergeometric' }
+          ]},
           { text: 'Markdown Examples', link: '/markdown-examples' },
           { text: 'Runtime API Examples', link: '/api-examples' }
         ]
