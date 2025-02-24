@@ -1,55 +1,61 @@
 {
-  "hash": "ab90b58a",
+  "hash": "c366d410",
   "configHash": "bb5ce34f",
-  "lockfileHash": "021e32c9",
-  "browserHash": "f201e2ef",
+  "lockfileHash": "f9cd7e30",
+  "browserHash": "59d31fa5",
   "optimized": {
     "vue": {
       "src": "../../../../node_modules/vue/dist/vue.runtime.esm-bundler.js",
       "file": "vue.js",
-      "fileHash": "23ced9bf",
+      "fileHash": "921803f0",
       "needsInterop": false
     },
     "vitepress > @vue/devtools-api": {
       "src": "../../../../node_modules/@vue/devtools-api/dist/index.js",
       "file": "vitepress___@vue_devtools-api.js",
-      "fileHash": "7c6c09a2",
+      "fileHash": "5bae0500",
       "needsInterop": false
     },
     "vitepress > @vueuse/core": {
       "src": "../../../../node_modules/@vueuse/core/index.mjs",
       "file": "vitepress___@vueuse_core.js",
-      "fileHash": "7710f53a",
+      "fileHash": "ba4a8414",
       "needsInterop": false
     },
     "vitepress > @vueuse/integrations/useFocusTrap": {
       "src": "../../../../node_modules/@vueuse/integrations/useFocusTrap.mjs",
       "file": "vitepress___@vueuse_integrations_useFocusTrap.js",
-      "fileHash": "8e9f4703",
+      "fileHash": "9dcd19d7",
       "needsInterop": false
     },
     "vitepress > mark.js/src/vanilla.js": {
       "src": "../../../../node_modules/mark.js/src/vanilla.js",
       "file": "vitepress___mark__js_src_vanilla__js.js",
-      "fileHash": "fc8372cd",
+      "fileHash": "84871d8e",
       "needsInterop": false
     },
     "vitepress > minisearch": {
       "src": "../../../../node_modules/minisearch/dist/es/index.js",
       "file": "vitepress___minisearch.js",
-      "fileHash": "252cebf7",
+      "fileHash": "083be157",
       "needsInterop": false
     },
     "lucide-vue-next": {
       "src": "../../../../node_modules/lucide-vue-next/dist/esm/lucide-vue-next.js",
       "file": "lucide-vue-next.js",
-      "fileHash": "d06f973d",
+      "fileHash": "fd9ac71b",
       "needsInterop": false
     },
     "@vercel/analytics": {
       "src": "../../../../node_modules/@vercel/analytics/dist/index.mjs",
       "file": "@vercel_analytics.js",
-      "fileHash": "7cf8fe43",
+      "fileHash": "26c4677f",
+      "needsInterop": false
+    },
+    "chart.js": {
+      "src": "../../../../node_modules/chart.js/dist/chart.js",
+      "file": "chart__js.js",
+      "fileHash": "9a15ad6a",
       "needsInterop": false
     }
   },
@@ -60,8 +66,8 @@
     "chunk-LW4I4DCF": {
       "file": "chunk-LW4I4DCF.js"
     },
-    "chunk-PZ5AY32C": {
-      "file": "chunk-PZ5AY32C.js"
+    "chunk-UVKRO5ER": {
+      "file": "chunk-UVKRO5ER.js"
     }
   }
 }
