@@ -75,6 +75,7 @@ La distribución normal es fundamental en estadística debido a sus propiedades 
     <iframe src="https://drive.google.com/file/d/1EpluTvf8ZrhVh7lhL52NOb1KrHV7oXwD/preview" style="width: 100%; max-width: 800px; height: 600px; border: 1px solid #ccc; border-radius: 8px;"></iframe>
 </div>
 
+## Tabla Interactiva
 
 <NormalDistributionChart :mean="0" :stdDev="1" />
 

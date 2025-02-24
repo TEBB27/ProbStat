@@ -1,13 +1,23 @@
 <script setup>
-import { ref, watch, onMounted } from "vue";
+import { ref, watch, onMounted, computed } from "vue";
+import { useData } from "vitepress";
 import { Chart, registerables } from "chart.js";
 
 Chart.register(...registerables);
 
+const { isDark } = useData(); // 🔥 Detecta si el tema es oscuro
 const canvasRef = ref(null);
 const mean = ref(0);
 const stdDev = ref(1);
 let chartInstance = null;
+
+// 🎨 Definir colores según el modo (light/dark)
+const chartColors = computed(() => ({
+  line: isDark.value ? "cyan" : "blue", // 💠 Azul en claro, cyan en oscuro
+  background: isDark.value ? "rgba(0, 255, 255, 0.2)" : "rgba(0, 0, 255, 0.2)", // 🔵 Transparente en ambos
+  text: isDark.value ? "white" : "black", // 🎨 Texto oscuro o claro
+  grid: isDark.value ? "rgba(255, 255, 255, 0.2)" : "rgba(0, 0, 0, 0.1)", // 📏 Grid más tenue en claro
+}));
 
 const generateNormalData = (mean, stdDev) => {
   const data = [];
@@ -31,10 +41,10 @@ const renderChart = () => {
         {
           label: "Distribución Normal",
           data: normalData.map((d) => d.y),
-          borderColor: "cyan", // 💠 Color brillante
+          borderColor: chartColors.value.line, // 🔥 Color dinámico
           borderWidth: 2,
           fill: true,
-          backgroundColor: "rgba(0, 255, 255, 0.2)" // 🔵 Relleno semi-transparente
+          backgroundColor: chartColors.value.background,
         }
       ]
     },
@@ -43,25 +53,26 @@ const renderChart = () => {
       maintainAspectRatio: false,
       scales: {
         x: {
-          title: { display: true, text: "X", color: "white" }, // 🏁 Texto en blanco
-          ticks: { color: "white" }, // 🏷 Números en blanco
-          grid: { color: "rgba(255, 255, 255, 0.2)" } // 📏 Grid tenue
+          title: { display: true, text: "X", color: chartColors.value.text },
+          ticks: { color: chartColors.value.text },
+          grid: { color: chartColors.value.grid }
         },
         y: {
-          title: { display: true, text: "Densidad", color: "white" },
-          ticks: { color: "white" },
-          grid: { color: "rgba(255, 255, 255, 0.2)" }
+          title: { display: true, text: "Densidad", color: chartColors.value.text },
+          ticks: { color: chartColors.value.text },
+          grid: { color: chartColors.value.grid }
         }
       },
       plugins: {
-        legend: { labels: { color: "white" } } // 🎨 Texto de la leyenda en blanco
+        legend: { labels: { color: chartColors.value.text } }
       }
     }
   });
 };
 
+// 🔄 Redibujar la gráfica cuando cambian los valores o el tema
 onMounted(renderChart);
-watch([mean, stdDev], renderChart); // Redibujar cuando cambian los valores
+watch([mean, stdDev, isDark], renderChart);
 </script>
 
 <template>
@@ -82,7 +93,7 @@ watch([mean, stdDev], renderChart); // Redibujar cuando cambian los valores
   </div>
 </template>
 
-<style>
+<style scoped>
 .controls {
   display: flex;
   gap: 10px;
@@ -92,15 +103,14 @@ watch([mean, stdDev], renderChart); // Redibujar cuando cambian los valores
   display: flex;
   flex-direction: column;
   font-size: 14px;
-  color: white; /* 🎨 Texto blanco para fondo oscuro */
 }
 .controls input {
   width: 80px;
   padding: 5px;
   font-size: 16px;
-  background: black; /* 🖤 Fondo oscuro */
-  color: white; /* 🎨 Texto blanco */
-  border: 1px solid cyan; /* 💠 Resaltado */
+  border: 1px solid var(--vp-c-brand-1); /* ✨ Usa el color del tema */
+  background: var(--vp-c-bg-alt);
+  color: var(--vp-c-text-1);
 }
 .chart-container {
   width: 100%;
