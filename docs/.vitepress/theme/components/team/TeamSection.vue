@@ -1,15 +1,23 @@
 <template>
-  <div class="container mx-auto px-4 py-8">
-    <h2 class="text-3xl font-bold text-center mb-8">Our Team</h2>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-      <div v-for="member in teamMembers" :key="member.id" class="bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:scale-105">
-        <img :src="member.image" :alt="member.name" class="w-full h-48 object-cover object-center">
-        <div class="p-6">
-          <h3 class="text-xl font-semibold mb-2">{{ member.name }}</h3>
-          <p class="text-gray-600 mb-4">{{ member.role }}</p>
-          <div class="flex justify-center space-x-4">
-            <a v-for="link in member.socialLinks" :key="link.platform" :href="link.url" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-gray-700 transition-colors duration-300">
-              <component :is="link.icon" size="24" />
+  <div class="team-container">
+    <h2 class="team-title">Nuestro Equipo</h2>
+    <div class="team-grid">
+      <div v-for="member in teamMembers" :key="member.id" class="team-card">
+        <img :src="member.image" :alt="member.name" class="team-image">
+        <div class="team-info">
+          <h3 class="member-name">{{ member.name }}</h3>
+          <p class="member-role">{{ member.role }}</p>
+          <div class="social-links">
+            <a
+              v-for="link in member.socialLinks"
+              :key="link.platform"
+              :href="link.url"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="social-icon"
+              :class="socialColors[link.platform]"
+            >
+              <component :is="link.icon" class="icon" />
             </a>
           </div>
         </div>
@@ -25,9 +33,9 @@ import { Twitter, Linkedin, Github } from 'lucide-vue-next';
 const teamMembers = ref([
   {
     id: 1,
-    name: 'Jane Doe',
-    role: 'CEO & Founder',
-    image: '/placeholder.svg?height=300&width=400',
+    name: 'Tomás Briceño',
+    role: 'Estudiante de Ingeniería Industrial',
+    image: '/images/tebb-image.webp?height=300&width=400',
     socialLinks: [
       { platform: 'twitter', url: 'https://twitter.com/janedoe', icon: Twitter },
       { platform: 'linkedin', url: 'https://linkedin.com/in/janedoe', icon: Linkedin },
@@ -48,7 +56,7 @@ const teamMembers = ref([
   {
     id: 3,
     name: 'Emily Brown',
-    role: 'Lead Designer',
+    role: 'Diseñadora Principal',
     image: '/placeholder.svg?height=300&width=400',
     socialLinks: [
       { platform: 'twitter', url: 'https://twitter.com/emilybrown', icon: Twitter },
@@ -57,8 +65,111 @@ const teamMembers = ref([
     ],
   },
 ]);
+
+const socialColors = {
+  twitter: "hover:text-blue-400",
+  linkedin: "hover:text-blue-600",
+  github: "hover:text-gray-900 dark:hover:text-gray-300",
+};
 </script>
 
 <style scoped>
-/* Add any additional custom styles here if needed */
+.team-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.team-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #222;
+}
+
+.dark .team-title {
+  color: #f5f5f5;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+/* Tarjetas */
+.team-card {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 16px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+/* Modo oscuro */
+.dark .team-card {
+  background: #1B1B1F;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.team-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+}
+
+.team-image {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+.team-info {
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.member-name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #333;
+}
+
+.dark .member-name {
+  color: #f5f5f5;
+}
+
+.member-role {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.dark .member-role {
+  color: #bbb;
+}
+
+/* Redes Sociales */
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.social-icon {
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: scale(1.2);
+}
+
+.icon {
+  width: 28px;
+  height: 28px;
+}
 </style>

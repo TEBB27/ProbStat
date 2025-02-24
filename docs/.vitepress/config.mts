@@ -91,8 +91,9 @@ export default defineConfig({
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/TEBB27' },
+      { icon: 'linkedin', link: 'www.linkedin.com/in/tomás-esteban-briceño-bernal-6038251ba' },
+      { icon: 'x', link: 'https://x.com/tebb_27' },
       { icon: 'instagram', link: 'https://instagram.com/tebb2722' },
-      { icon: 'x', link: 'https://x.com/tebb_27' }
     ],
 
     footer: {
