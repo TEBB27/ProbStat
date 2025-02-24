@@ -3,7 +3,7 @@
     <h2 class="team-title">Nuestro Equipo</h2>
     <div class="team-grid">
       <div v-for="member in teamMembers" :key="member.id" class="team-card">
-        <img :src="member.image" :alt="member.name" class="team-image">
+        <img :src="member.image" :alt="member.name" class="team-image" />
         <div class="team-info">
           <h3 class="member-name">{{ member.name }}</h3>
           <p class="member-role">{{ member.role }}</p>
@@ -17,7 +17,7 @@
               class="social-icon"
               :class="socialColors[link.platform]"
             >
-              <component :is="link.icon" class="icon" />
+              <FontAwesomeIcon :icon="link.icon" class="icon" />
             </a>
           </div>
         </div>
@@ -28,7 +28,8 @@
 
 <script setup>
 import { ref } from 'vue';
-import { Twitter, Linkedin, Github } from 'lucide-vue-next';
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
+import { faXTwitter, faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 
 const teamMembers = ref([
   {
@@ -37,37 +38,37 @@ const teamMembers = ref([
     role: 'Estudiante de Ingeniería Industrial',
     image: '/images/tebb-image.webp?height=300&width=400',
     socialLinks: [
-      { platform: 'twitter', url: 'https://twitter.com/janedoe', icon: Twitter },
-      { platform: 'linkedin', url: 'https://linkedin.com/in/janedoe', icon: Linkedin },
-      { platform: 'github', url: 'https://github.com/janedoe', icon: Github },
+      { platform: 'x', url: 'https://twitter.com/janedoe', icon: faXTwitter },
+      { platform: 'linkedin', url: 'https://linkedin.com/in/janedoe', icon: faLinkedin },
+      { platform: 'github', url: 'https://github.com/janedoe', icon: faGithub },
     ],
   },
   {
     id: 2,
-    name: 'John Smith',
-    role: 'CTO',
+    name: 'Edward Cantor',
+    role: 'Estudiante de Ingeniería Industrial',
     image: '/placeholder.svg?height=300&width=400',
     socialLinks: [
-      { platform: 'twitter', url: 'https://twitter.com/johnsmith', icon: Twitter },
-      { platform: 'linkedin', url: 'https://linkedin.com/in/johnsmith', icon: Linkedin },
-      { platform: 'github', url: 'https://github.com/johnsmith', icon: Github },
+      { platform: 'x', url: 'https://twitter.com/johnsmith', icon: faXTwitter },
+      { platform: 'linkedin', url: 'https://linkedin.com/in/johnsmith', icon: faLinkedin },
+      { platform: 'github', url: 'https://github.com/johnsmith', icon: faGithub },
     ],
   },
   {
     id: 3,
-    name: 'Emily Brown',
-    role: 'Diseñadora Principal',
+    name: 'Samuel Rodríguez',
+    role: 'Estudiante de Ingeniería Industrial',
     image: '/placeholder.svg?height=300&width=400',
     socialLinks: [
-      { platform: 'twitter', url: 'https://twitter.com/emilybrown', icon: Twitter },
-      { platform: 'linkedin', url: 'https://linkedin.com/in/emilybrown', icon: Linkedin },
-      { platform: 'github', url: 'https://github.com/emilybrown', icon: Github },
+      { platform: 'x', url: 'https://twitter.com/emilybrown', icon: faXTwitter },
+      { platform: 'linkedin', url: 'https://linkedin.com/in/emilybrown', icon: faLinkedin },
+      { platform: 'github', url: 'https://github.com/emilybrown', icon: faGithub },
     ],
   },
 ]);
 
 const socialColors = {
-  twitter: "hover:text-blue-400",
+  x: "hover:text-blue-400",
   linkedin: "hover:text-blue-600",
   github: "hover:text-gray-900 dark:hover:text-gray-300",
 };
