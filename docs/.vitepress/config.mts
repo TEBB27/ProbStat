@@ -31,6 +31,7 @@ export default defineConfig({
     sidebar: [
       {
         text: 'Introducción',
+        collapsed: true,
         items: [
           { text: 'Markdown Examples', link: '/markdown-examples' },
           { text: 'Runtime API Examples', link: '/api-examples' }
@@ -38,6 +39,7 @@ export default defineConfig({
       },
       {
         text: 'Estadística Descriptiva',
+        collapsed: true,
         items: [
           { text: 'Markdown Examples', link: '/markdown-examples' },
           { text: 'Runtime API Examples', link: '/api-examples' }
@@ -45,8 +47,10 @@ export default defineConfig({
       },
       {
         text: 'Probabilidad',
+        collapsed: true,
         items: [
           {text:'Distribuciones Discretas',
+            collapsed: true,
             items: [
               { text: 'Introducción', link: '/src/probability/discrete-distributions/introduction' },
               { text: 'Binomial', link: '/src/probability/discrete-distributions/binomial' },
@@ -54,10 +58,12 @@ export default defineConfig({
               { text: 'Hipergeométrica', link: '/src/probability/discrete-distributions/hypergeometric' }
           ]},
           {text:'Distribuciones Continuas',
+            collapsed: true,
             items: [
               { text: 'Introducción', link: '/src/probability/continous-distributions/introduction' },
               { text: 'Normal', link: '/src/probability/continous-distributions/normal' },
               {text:'Aproximación Normal',
+                collapsed: true,
                 items: [
                   { text: 'Aproximación binomial a la normal', link: '/src/probability/continous-distributions/normal-approximation/de-moivre-laplace.md' },
                   { text: 'Binomial', link: '/src/probability/discrete-distributions/binomial' },
@@ -69,8 +75,10 @@ export default defineConfig({
       },
       {
         text: 'Inferencia',
+        collapsed: true,
         items: [
           {text:'Muestreo',
+            collapsed: true,
             items: [
               { text: 'Muestreo vs Diseño Experimental', link: '/src/inference/sampling/sampling-vs-experimentaldesign' },
               { text: 'Binomial', link: '/src/probability/discrete-distributions/binomial' },
