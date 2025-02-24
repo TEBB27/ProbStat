@@ -5,7 +5,8 @@ import DefaultTheme from 'vitepress/theme'
 import './style.css'
 import { inject } from "@vercel/analytics"
 import { onMounted } from 'vue'
-import NormalDistributionChart from './components/NormalDistributionChart.vue'
+import NormalDistributionChart from './components/normal-distribution/NormalDistributionChart.vue'
+import TeamSection from './components/team/TeamSection.vue'
 
 export default {
   
@@ -18,6 +19,7 @@ export default {
   },
   enhanceApp({ app, router, siteData }) {
     app.component('NormalDistributionChart', NormalDistributionChart),
+    app.component('TeamSection', TeamSection),
     // ...
     inject();
     onMounted(() => {
