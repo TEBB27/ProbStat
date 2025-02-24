@@ -2,7 +2,7 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  
+  lastUpdated: true,
   markdown: {
     math: true
   },
@@ -16,7 +16,7 @@ export default defineConfig({
   title: "Probabilidad y Estadística 🚀",
   description: "Conjunto de apuntes y notas del curso de probabilidad funamental para ingenieros industriales",
   themeConfig: {
-    // logo: '/logo-probability.svg',
+    // logo: '🚀' ,
     // siteTitle: false,
     search: {
       provider: 'local'

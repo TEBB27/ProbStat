@@ -29,21 +29,21 @@ features:
   - title: Rudimientos
     icon: 📘
     details: Necesidad, Conceptos Básicos, Conteo, Probabilidad Uniones-Intersecciones, Regla de Bayes.
-  - title: Parte III - Inferencia
+  - title: Distribuciones Discretas
     icon: 📗
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Parte III - Inferencia
+    details: Introducción, Distribución Binomial, Distribución de Poisson, Distribución Hipegeométrica.
+  - title: Distribuciones Continuas
     icon: 👨🏻‍🎓
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Parte III - Inferencia
+    details: Introducción, Distribución Normal, Amproximaciones a la Normal.
+  - title: Muestreo
     icon: 👨🏻‍🏫
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Parte III - Inferencia
+    details: Muestreo vs Diseño Experimental, Distribuciones Muestrales, Teorema Central del Limite (TCL), Aplicación del TCL.
+  - title: Estimación
     icon: 🚀
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Parte III - Inferencia
+    details: Introducción,, Estimación Puntual, Estimación por Intervalo - Media, Contrastre para Diferencia de Medias, Contraste para Diferencia de Proporciones.
+  - title: Contraste de hipótesis
     icon: 💵
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+    details: Introducción, Contraste para la Media, Contraste para la Diferencia de Medias, Contastte para la Diferencia de Proporciones.
 
 footer: true
 ---
