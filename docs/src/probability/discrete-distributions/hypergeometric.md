@@ -11,17 +11,17 @@ Consideremos una población finita de tamaño \( N \), donde:
 
 Se extraen \( n \) elementos sin reemplazo. La variable aleatoria \( X \) que cuenta el número de éxitos en las \( n \) extracciones sigue una distribución hipergeométrica con parámetros \( N \), \( K \) y \( n \), denotada como:
 
-\[
-X \sim \text{Hipergeométrica}(N, K, n)
-\]
+$\sqrt{3x-1}+(1+x)^2$
 
 ## Función de Probabilidad
 
 La función de probabilidad de la distribución hipergeométrica está dada por:
 
-\[
+$$
+\begin{array}{c}
 P(X = k) = \frac{\binom{K}{k} \binom{N - K}{n - k}}{\binom{N}{n}}
-\]
+\end{array}
+$$
 
 donde:
 
@@ -35,27 +35,31 @@ donde:
 
 El valor esperado de una variable aleatoria hipergeométrica \( X \) es:
 
-\[
+$$
+\begin{array}{c}
 E[X] = n \cdot \frac{K}{N}
-\]
+\end{array}
+$$
 
 ### Varianza
 
 La varianza de una variable aleatoria hipergeométrica \( X \) es:
 
-\[
+$$
+\begin{array}{c}
 \text{Var}(X) = n \cdot \frac{K}{N} \cdot \left(1 - \frac{K}{N}\right) \cdot \left(\frac{N - n}{N - 1}\right)
-\]
+\end{array}
+$$
 
 ### Desviación Estándar
 
 La desviación estándar de una variable aleatoria hipergeométrica \( X \) es:
 
-\[
+$$
+\begin{array}{c}
 \sigma_X = \sqrt{n \cdot \frac{K}{N} \cdot \left(1 - \frac{K}{N}\right) \cdot \left(\frac{N - n}{N - 1}\right)}
-\]
-
----
+\end{array}
+$$
 
 ## Ejemplos Prácticos
 
@@ -73,26 +77,28 @@ La desviación estándar de una variable aleatoria hipergeométrica \( X \) es:
 
 2. Aplicamos la fórmula de la distribución hipergeométrica:
 
-\[
+$$
+\begin{array}{c}
 P(X = 2) = \frac{\binom{4}{2} \binom{6}{1}}{\binom{10}{3}}
-\]
+\end{array}
+$$
 
 3. Calculamos los coeficientes binomiales:
-   - \( \binom{4}{2} = 6 \).
-   - \( \binom{6}{1} = 6 \).
-   - \( \binom{10}{3} = 120 \).
+   - $\binom{4}{2} = 6 $
+   - $\binom{6}{1} = 6 $
+   - $\binom{10}{3} = 120 $
 
 4. Sustituimos los valores:
 
-\[
+$$
+\begin{array}{c}
 P(X = 2) = \frac{6 \cdot 6}{120} = \frac{36}{120} = 0.3
-\]
+\end{array}
+$$
 
 **Respuesta**: La probabilidad de obtener exactamente 2 bolas rojas es \( 30\% \).
 
----
-
-### Ejemplo 2: Intermedio
+## Ejemplo 2: Intermedio
 
 **Problema**: En un mazo de 52 cartas, hay 13 cartas de corazones. Si se extraen 5 cartas sin reemplazo, ¿cuál es la probabilidad de que al menos 3 sean corazones?
 
@@ -107,48 +113,66 @@ P(X = 2) = \frac{6 \cdot 6}{120} = \frac{36}{120} = 0.3
 2. Calculamos cada probabilidad por separado usando la fórmula hipergeométrica:
 
    - Para \( P(X = 3) \):
-     \[
+     $$
+     \begin{array}{c}
      P(X = 3) = \frac{\binom{13}{3} \binom{39}{2}}{\binom{52}{5}}
-     \]
-     \[
+     \end{array}
+     $$
+     $$
+     \begin{array}{c}
      \binom{13}{3} = 286, \quad \binom{39}{2} = 741, \quad \binom{52}{5} = 2,598,960
-     \]
-     \[
+     \end{array}
+     $$
+     $$
+     \begin{array}{c}
      P(X = 3) = \frac{286 \cdot 741}{2,598,960} \approx 0.0815
-     \]
+     \end{array}
+     $$
 
    - Para \( P(X = 4) \):
-     \[
+     $$
+     \begin{array}{c}
      P(X = 4) = \frac{\binom{13}{4} \binom{39}{1}}{\binom{52}{5}}
-     \]
-     \[
+     \end{array}
+     $$
+     $$
+     \begin{array}{c}
      \binom{13}{4} = 715, \quad \binom{39}{1} = 39
-     \]
-     \[
+     \end{array}
+     $$
+     $$
+     \begin{array}{c}
      P(X = 4) = \frac{715 \cdot 39}{2,598,960} \approx 0.0107
-     \]
+     \end{array}
+     $$
 
    - Para \( P(X = 5) \):
-     \[
+     $$
+     \begin{array}{c}
      P(X = 5) = \frac{\binom{13}{5} \binom{39}{0}}{\binom{52}{5}}
-     \]
-     \[
+     \end{array}
+     $$
+     $$
+     \begin{array}{c}
      \binom{13}{5} = 1,287, \quad \binom{39}{0} = 1
-     \]
-     \[
+     \end{array}
+     $$
+     $$
+     \begin{array}{c}
      P(X = 5) = \frac{1,287 \cdot 1}{2,598,960} \approx 0.0005
-     \]
+     \end{array}
+     $$
 
 3. Sumamos las probabilidades:
-   \[
+   $$
+   \begin{array}{c}
    P(X \geq 3) = 0.0815 + 0.0107 + 0.0005 = 0.0927
-   \]
+   \end{array}
+   $$
 
 **Respuesta**: La probabilidad de obtener al menos 3 cartas de corazones es aproximadamente \( 9.27\% \).
 
----
-
-### Ejemplo 3: Avanzado
+## Ejemplo 3: Avanzado
 
 **Problema**: En una lotería, hay 100 boletos en total, de los cuales 10 son ganadores. Si una persona compra 15 boletos, ¿cuál es la probabilidad de que exactamente 4 de ellos sean ganadores?
 
@@ -162,9 +186,11 @@ P(X = 2) = \frac{6 \cdot 6}{120} = \frac{36}{120} = 0.3
 
 2. Aplicamos la fórmula de la distribución hipergeométrica:
 
-\[
+$$
+\begin{array}{c}
 P(X = 4) = \frac{\binom{10}{4} \binom{90}{11}}{\binom{100}{15}}
-\]
+\end{array}
+$$
 
 3. Calculamos los coeficientes binomiales:
    - \( \binom{10}{4} = 210 \).
@@ -173,13 +199,13 @@ P(X = 4) = \frac{\binom{10}{4} \binom{90}{11}}{\binom{100}{15}}
 
 4. Sustituimos los valores:
 
-\[
+$$
+\begin{array}{c}
 P(X = 4) = \frac{210 \cdot 1.05 \times 10^{14}}{2.53 \times 10^{17}} \approx 0.087
-\]
+\end{array}
+$$
 
 **Respuesta**: La probabilidad de que exactamente 4 boletos sean ganadores es aproximadamente \( 8.7\% \).
-
----
 
 ## Aplicaciones
 
@@ -188,8 +214,6 @@ La distribución hipergeométrica se utiliza en situaciones donde el muestreo se
 - **Control de calidad**: Para calcular la probabilidad de encontrar un número específico de defectos en una muestra de productos.
 - **Biología**: Para estimar la probabilidad de encontrar un número determinado de individuos con una característica específica en una población.
 - **Juegos de azar**: Para calcular probabilidades en juegos como la lotería o el póker.
-
----
 
 ## Conclusión
 

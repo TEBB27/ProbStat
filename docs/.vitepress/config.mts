@@ -15,6 +15,8 @@ export default defineConfig({
   title: "Probabilidad y Estadística 🚀",
   description: "Conjunto de apuntes y notas del curso de probabilidad funamental para ingenieros industriales",
   themeConfig: {
+    // logo: '/logo-probability.svg',
+    // siteTitle: false,
     search: {
       provider: 'local'
     },
@@ -22,7 +24,7 @@ export default defineConfig({
     nav: [
       { text: 'Inicio', link: '/' },
       { text: 'Temas', link: '/markdown-examples' },
-      { text: 'Equipo', link: '/markdown-examples' }
+      { text: 'Equipo', link: '/team' }
     ],
 
     sidebar: [
@@ -54,15 +56,26 @@ export default defineConfig({
             items: [
               { text: 'Introducción', link: '/src/probability/continous-distributions/introduction' },
               { text: 'Normal', link: '/src/probability/continous-distributions/normal' },
-              { text: 'Aproximación Normal', link: '/src/probability/continous-distributions/normal-approximation' }
+              {text:'Aproximación Normal',
+                items: [
+                  { text: 'Aproximación binomial a la normal', link: '/src/probability/continous-distributions/normal-approximation/de-moivre-laplace.md' },
+                  { text: 'Binomial', link: '/src/probability/discrete-distributions/binomial' },
+                  { text: 'Poisson', link: '/src/probability/discrete-distributions/poisson' },
+                  { text: 'Hipergeométrica', link: '/src/probability/discrete-distributions/hypergeometric' }
+              ]},
           ]},
         ]
       },
       {
         text: 'Inferencia',
         items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
+          {text:'Muestreo',
+            items: [
+              { text: 'Muestreo vs Diseño Experimental', link: '/src/inference/sampling/sampling-vs-experimentaldesign' },
+              { text: 'Binomial', link: '/src/probability/discrete-distributions/binomial' },
+              { text: 'Poisson', link: '/src/probability/discrete-distributions/poisson' },
+              { text: 'Hipergeométrica', link: '/src/probability/discrete-distributions/hypergeometric' }
+          ]},
         ]
       }
     ],
