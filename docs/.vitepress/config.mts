@@ -36,9 +36,10 @@ export default defineConfig({
           {text:'Conceptos iniciales',
             items: [
               { text: 'Población vs Muestra', link: '/src/descriptive-statistic/initial-concepts/sample' },
-              { text: 'Binomial', link: '/src/probability/discrete-distributions/binomial' },
-              { text: 'Poisson', link: '/src/probability/discrete-distributions/poisson' },
-              { text: 'Hipergeométrica', link: '/src/probability/discrete-distributions/hypergeometric' }
+              { text: 'Parámetro Vs Estadístico', link: '/src/descriptive-statistic/initial-concepts/parametrosVsEstadistico' },
+              { text: 'Estadística Descriptiva Vs Inferencial', link: '/src/descriptive-statistic/initial-concepts/EstadisticaDescriptivaVsInferencia' },
+              { text: 'Origen De Un Proyecto', link: '/src/descriptive-statistic/initial-concepts/OrigenDeProyecto' },
+              { text: 'Planteamiento Cuantitivo', link: '/src/descriptive-statistic/initial-concepts/PlanteamientoCuantitivo' }
           ]},
           { text: 'Markdown Examples', link: '/markdown-examples' },
           { text: 'Runtime API Examples', link: '/api-examples' }
