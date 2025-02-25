@@ -1,4 +1,4 @@
-# Conceptos Iniciales en Estadística: Parámetro vs Estadístico
+# Parámetro vs Estadístico
 
 En estadística, los conceptos de **parámetro** y **estadístico** son fundamentales para comprender cómo se describe y se analiza una población o una muestra. A continuación, se detallan sus definiciones y diferencias clave.
 

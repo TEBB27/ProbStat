@@ -45,7 +45,7 @@ export default defineConfig({
             items: [
               { text: 'Gráficos', link: '/src/descriptive-statistic/MedidasdeResumen/Graficos' },
               { text: 'Resumenes Númericos', link: '/src/descriptive-statistic/MedidasdeResumen/ResumenesNumericos' },
-              { text: 'Datos Bivariados', link: '/src/descriptive-statistic/MedidasdeResumen/DatosBivariados' },
+              { text: 'Datos Bivariados', link: '/src/descriptive-statistic/MedidasdeResumen/DatosBivariados' }
               ]},
           { text: 'Markdown Examples', link: '/markdown-examples' },
           { text: 'Runtime API Examples', link: '/api-examples' }
@@ -54,6 +54,14 @@ export default defineConfig({
       {
         text: 'Probabilidad',
         items: [
+          {text:'Rudimentos',
+            items: [
+              { text: 'Necesidad', link: '/src/probability/Rudimentos/Necesidad' },
+              { text: 'Conceptos Básicos', link: '/src/probability/Rudimentos/ConceptosBasicos' },
+              { text: 'Conteo', link: '/src/probability/Rudimentos/Conteo' },
+              { text: 'Probabilidad Uniones-Intersecciones', link: '/src/probability/Rudimentos/Probabilidad_Uniones-Intersecciones' },
+              { text: 'Regla de Bayes', link: '/src/probability/Rudimentos/ReglaDeBayes' }
+              ]},
           {text:'Distribuciones Discretas',
             items: [
               { text: 'Introducción', link: '/src/probability/discrete-distributions/introduction' },
