@@ -2,7 +2,7 @@
 
 En probabilidad, las **uniones e intersecciones** permiten describir la relación entre distintos eventos dentro de un espacio muestral. Estas operaciones se basan en los principios de la teoría de conjuntos.
 
-## 1. Unión de Eventos (\( P(A \cup B) \))
+## 1. Unión de Eventos (\( P(A U B) \))
 La unión de dos eventos \( A \) y \( B \) representa el conjunto de resultados que pertenecen a al menos uno de los eventos. Matemáticamente, se expresa como:
 \[
 P(A \cup B) = P(A) + P(B) - P(A \cap B)
