@@ -41,6 +41,20 @@ export default defineConfig({
         text: 'Estadística Descriptiva',
         collapsed: true,
         items: [
+          {text:'Conceptos iniciales',
+            items: [
+              { text: 'Población vs Muestra', link: '/src/descriptive-statistic/initial-concepts/sample' },
+              { text: 'Parámetro Vs Estadístico', link: '/src/descriptive-statistic/initial-concepts/parametrosVsEstadistico' },
+              { text: 'Estadística Descriptiva Vs Inferencial', link: '/src/descriptive-statistic/initial-concepts/EstadisticaDescriptivaVsInferencia' },
+              { text: 'Origen De Un Proyecto', link: '/src/descriptive-statistic/initial-concepts/OrigenDeProyecto' },
+              { text: 'Planteamiento Cuantitivo', link: '/src/descriptive-statistic/initial-concepts/PlanteamientoCuantitivo' }
+          ]},
+          {text:'Medidas de Resumen',
+            items: [
+              { text: 'Gráficos', link: '/src/descriptive-statistic/MedidasdeResumen/Graficos' },
+              { text: 'Resumenes Númericos', link: '/src/descriptive-statistic/MedidasdeResumen/ResumenesNumericos' },
+              { text: 'Datos Bivariados', link: '/src/descriptive-statistic/MedidasdeResumen/DatosBivariados' }
+              ]},
           { text: 'Markdown Examples', link: '/markdown-examples' },
           { text: 'Runtime API Examples', link: '/api-examples' }
         ]
@@ -49,6 +63,14 @@ export default defineConfig({
         text: 'Probabilidad',
         collapsed: true,
         items: [
+          {text:'Rudimentos',
+            items: [
+              { text: 'Necesidad', link: '/src/probability/Rudimentos/Necesidad' },
+              { text: 'Conceptos Básicos', link: '/src/probability/Rudimentos/ConceptosBasicos' },
+              { text: 'Conteo', link: '/src/probability/Rudimentos/Conteo' },
+              { text: 'Probabilidad Uniones-Intersecciones', link: '/src/probability/Rudimentos/Probabilidad_Uniones-Intersecciones' },
+              { text: 'Regla de Bayes', link: '/src/probability/Rudimentos/ReglaDeBayes' }
+              ]},
           {text:'Distribuciones Discretas',
             collapsed: true,
             items: [
