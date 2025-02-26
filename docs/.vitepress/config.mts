@@ -96,11 +96,27 @@ export default defineConfig({
           {text:'Muestreo',
             collapsed: true,
             items: [
-              { text: 'Muestreo vs Diseño Experimental', link: '/src/inference/sampling/sampling-vs-experimentaldesign' },
-              { text: 'Binomial', link: '/src/probability/discrete-distributions/binomial' },
-              { text: 'Poisson', link: '/src/probability/discrete-distributions/poisson' },
-              { text: 'Hipergeométrica', link: '/src/probability/discrete-distributions/hypergeometric' }
+              { text: 'Muestreo vs Diseño Experimental', link: '/src/inference/Muestreo/MuestreovsDExp' },
+              { text: 'Distribuciones muestrales', link: '/src/inference/Muestreo/DistribucionesMuestrales' },
+              { text: 'Teorema Central del Limite (TCL)', link: '/src/inference/Muestreo/TCL' },
+              { text: 'Aplicación del TCL', link: '/src/inference/Muestreo/AplicacionTCL' }
           ]},
+          {text:'Estimación',
+            collapsed: true,
+            items: [
+              { text: 'Introducción', link: '/src/inference/Estimacion/Introducion' },
+              { text: 'Estimación puntual', link: '/src/inference/Estimacion/EstimacionPuntual' },
+              { text: 'Estimación por Intervalo-media', link: '/src/inference/Estimacion/EstimacionIntMedia' },
+              { text: 'Estimación por diferencia de medias', link: '/src/inference/Estimacion/EstimacionDifMedias' }
+          ]},
+          {text:'Contraste de hipótesis',
+            collapsed: true,
+            items: [
+              { text: 'Introducción', link: '/src/inference/ContrasteHipotesis/Introduccion' },
+              { text: 'Contraste para la media', link: '/src/inference/ContrasteHipotesis/ContrasteMedia' },
+              { text: 'Contraste para la diferencia de medias', link: '/src/inference/ContrasteHipotesis/ContrasteDifMedias' },
+              { text: 'Contraste para la diferencia de proporciones', link: '/src/inference/ContrasteHipotesis/ContrasteDifProporciones' }
+          ]}
         ]
       }
     ],
