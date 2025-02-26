@@ -38,20 +38,19 @@ const teamMembers = ref([
     role: 'Estudiante de Ingeniería Industrial',
     image: '/images/tebb-image.webp?height=300&width=400',
     socialLinks: [
-      { platform: 'x', url: 'https://twitter.com/janedoe', icon: faXTwitter },
-      { platform: 'linkedin', url: 'https://linkedin.com/in/janedoe', icon: faLinkedin },
-      { platform: 'github', url: 'https://github.com/janedoe', icon: faGithub },
+      { platform: 'x', url: 'https://twitter.com/tebb_27', icon: faXTwitter },
+      { platform: 'linkedin', url: 'https://linkedin.com/in/tomás-esteban-briceño-bernal-6038251ba', icon: faLinkedin },
+      { platform: 'github', url: 'https://github.com/TEBB27', icon: faGithub },
     ],
   },
   {
     id: 2,
     name: 'Edward Cantor',
     role: 'Estudiante de Ingeniería Industrial',
-    image: '/placeholder.svg?height=300&width=400',
+    image: '/images/edward-image.webp?height=300&width=400',
     socialLinks: [
-      { platform: 'x', url: 'https://twitter.com/johnsmith', icon: faXTwitter },
-      { platform: 'linkedin', url: 'https://linkedin.com/in/johnsmith', icon: faLinkedin },
-      { platform: 'github', url: 'https://github.com/johnsmith', icon: faGithub },
+      { platform: 'linkedin', url: 'https://linkedin.com/in/edward-cantor-ba97a9276/', icon: faLinkedin },
+      { platform: 'github', url: 'https://github.com/EdwardCantor/', icon: faGithub },
     ],
   },
   {

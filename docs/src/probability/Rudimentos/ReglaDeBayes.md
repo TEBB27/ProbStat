@@ -1,49 +1,39 @@
-# Uniones e Intersecciones
+# Probabilidad: Regla de Bayes
 
-En probabilidad, las **uniones e intersecciones** permiten describir la relación entre distintos eventos dentro de un espacio muestral. Estas operaciones se basan en los principios de la teoría de conjuntos.
+La *Regla de Bayes* es un principio fundamental en probabilidad que permite actualizar nuestras creencias sobre un evento en función de nueva información. Se utiliza para calcular probabilidades condicionales cuando se conocen las probabilidades inversas.
 
-## 1. Unión de Eventos (\( P(A \cup B) \))
-La unión de dos eventos \( A \) y \( B \) representa el conjunto de resultados que pertenecen a al menos uno de los eventos. Matemáticamente, se expresa como:
-\[
-P(A \cup B) = P(A) + P(B) - P(A \cap B)
-\]
+## 1. Fórmula de la Regla de Bayes
+Dada una partición del espacio muestral en eventos mutuamente excluyentes $( B_1, B_2, ..., B_n )$, y un evento $A$ con probabilidad positiva, la Regla de Bayes se expresa como:
 
-### Caso de Eventos Mutuamente Excluyentes
-Si los eventos \( A \) y \( B \) son **mutuamente excluyentes** (es decir, no tienen elementos en común), entonces:
-\[
-P(A \cup B) = P(A) + P(B)
-\]
-
-## 2. Intersección de Eventos (\( P(A \cap B) \))
-La intersección de \( A \) y \( B \) representa el conjunto de resultados que pertenecen a ambos eventos simultáneamente. Su probabilidad depende de si los eventos son dependientes o independientes.
-
-### a) Eventos Independientes
-Dos eventos son **independientes** si la ocurrencia de uno no afecta la del otro. En este caso, la probabilidad conjunta se calcula como:
-\[
-P(A \cap B) = P(A) \times P(B)
-\]
-
-### b) Eventos Dependientes
-Si los eventos son **dependientes**, es necesario ajustar la probabilidad de \( B \) considerando que \( A \) ha ocurrido:
-\[
-P(A \cap B) = P(A) \times P(B | A)
-\]
-
-## 3. Regla de Bayes
-La **Regla de Bayes** permite calcular la probabilidad condicional de un evento \( A \) dado que ha ocurrido otro evento \( B \). Se expresa como:
-\[
-P(A | B) = \frac{P(B | A) P(A)}{P(B)}
-\]
+$P(B_i | A) = \frac{P(A | B_i) P(B_i)}{\sum_{j=1}^{n} P(A | B_j) P(B_j)}$
 
 Donde:
-- \( P(A | B) \) es la probabilidad de que ocurra \( A \) dado que ocurrió \( B \).
-- \( P(B | A) \) es la probabilidad de que ocurra \( B \) dado que ocurrió \( A \).
-- \( P(A) \) y \( P(B) \) son las probabilidades individuales de \( A \) y \( B \).
+- $P(B_i | A)$ es la probabilidad de que haya ocurrido $B_i$ dado que se observó $A$.
+- $P(A | B_i)$ es la probabilidad de que ocurra $A$ dado que ocurrió $B_i$.
+- $P(B_i)$ es la probabilidad previa de $B_i$.
+- $\sum_{j=1}^{n} P(A | B_j) P(B_j)$ es la probabilidad total de que ocurra $A$, considerando todas las posibles causas $B_j$.
 
-### Aplicaciones de la Regla de Bayes
-- **Medicina:** Diagnóstico basado en pruebas clínicas.
-- **Machine Learning:** Clasificación probabilística de datos.
-- **Finanzas:** Evaluación de riesgo en inversiones.
+## 2. Intuición
+La Regla de Bayes permite *invertir* una probabilidad condicional. Es útil cuando conocemos cómo se comporta $A$ bajo distintas condiciones $B_i$, y queremos inferir qué tan probable es cada una de esas condiciones después de observar $A$.
+
+## 3. Aplicaciones
+- *Diagnóstico médico:* Determinar la probabilidad de que un paciente tenga una enfermedad dado un resultado positivo en una prueba.
+- *Clasificación en machine learning:* Modelos como Naïve Bayes usan esta regla para categorizar datos.
+- *Finanzas:* Evaluación del riesgo de impago de un crédito basándose en el historial del cliente.
+- *Filtrado de spam:* Probabilidad de que un correo sea spam dado el uso de ciertas palabras clave.
+
+## 4. Ejemplo práctico
+Un test de una enfermedad detecta correctamente a los enfermos el 98% de las veces $P(positivo | enfermo) = 0.98$, pero también da falsos positivos el 5% de las veces $P(positivo | sano) = 0.05$. Si la probabilidad de estar enfermo en la población es del 1% $P(enfermo) = 0.01$, ¿cuál es la probabilidad de estar enfermo dado que el test es positivo?
+
+Usamos la Regla de Bayes:
+
+$P(enfermo | positivo) = \frac{P(positivo | enfermo) P(enfermo)}{P(positivo | enfermo) P(enfermo) + P(positivo | sano) P(sano)}$
+
+Sustituyendo valores:
+
+$P(enfermo | positivo) = \frac{(0.98)(0.01)}{(0.98)(0.01) + (0.05)(0.99)} = \frac{0.0098}{0.0098 + 0.0495} = 0.165$
+
+Esto significa que, a pesar de un test positivo, la probabilidad de estar enfermo es solo del *16.5%*, debido a la baja prevalencia de la enfermedad y la tasa de falsos positivos.
 
 ---
-El análisis de uniones, intersecciones y la regla de Bayes es fundamental en el estudio de la probabilidad y en la toma de decisiones bajo incertidumbre.
+La Regla de Bayes es una herramienta poderosa para tomar decisiones bajo incertidumbre, permitiendo mejorar la precisión en inferencias basadas en evidencia. 🚀
