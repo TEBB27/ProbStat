@@ -24,19 +24,11 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Inicio', link: '/' },
-      { text: 'Temas', link: '/markdown-examples' },
+      { text: 'Temas', link: '/src/descriptive-statistic/initial-concepts/sample' },
       { text: 'Equipo', link: '/team' }
     ],
 
     sidebar: [
-      {
-        text: 'Introducción',
-        collapsed: true,
-        items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
-        ]
-      },
       {
         text: 'Estadística Descriptiva',
         collapsed: true,

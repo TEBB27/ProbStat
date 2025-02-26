@@ -7,17 +7,17 @@ hero:
   tagline: Sin datos, eres solo otra persona con una opinión – W. Edwards Deming
   actions:
     - theme: brand
-      text: Introducción
-      link: /markdown-examples
+      text: Equipo
+      link: /team
     - theme: alt
       text: Estadística Descriptiva
-      link: /api-examples
+      link: /src/descriptive-statistic/initial-concepts/sample
     - theme: alt
       text: Probabilidad
-      link: /api-examples
+      link: /src/probability/Rudimentos/ConceptosBasicos
     - theme: alt
       text: Inferencia
-      link: /api-examples
+      link: /src/inference/Muestreo/MuestreovsDExp
 
 features:
   - icon: 📒
