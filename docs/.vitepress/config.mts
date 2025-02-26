@@ -42,6 +42,7 @@ export default defineConfig({
         collapsed: true,
         items: [
           {text:'Conceptos iniciales',
+            collapsed: true,
             items: [
               { text: 'Población vs Muestra', link: '/src/descriptive-statistic/initial-concepts/sample' },
               { text: 'Parámetro Vs Estadístico', link: '/src/descriptive-statistic/initial-concepts/parametrosVsEstadistico' },
@@ -50,13 +51,12 @@ export default defineConfig({
               { text: 'Planteamiento Cuantitivo', link: '/src/descriptive-statistic/initial-concepts/PlanteamientoCuantitivo' }
           ]},
           {text:'Medidas de Resumen',
+            collapsed: true,
             items: [
               { text: 'Gráficos', link: '/src/descriptive-statistic/MedidasdeResumen/Graficos' },
               { text: 'Resumenes Númericos', link: '/src/descriptive-statistic/MedidasdeResumen/ResumenesNumericos' },
               { text: 'Datos Bivariados', link: '/src/descriptive-statistic/MedidasdeResumen/DatosBivariados' }
               ]},
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
         ]
       },
       {
@@ -64,6 +64,7 @@ export default defineConfig({
         collapsed: true,
         items: [
           {text:'Rudimentos',
+            collapsed: true,
             items: [
               { text: 'Necesidad', link: '/src/probability/Rudimentos/Necesidad' },
               { text: 'Conceptos Básicos', link: '/src/probability/Rudimentos/ConceptosBasicos' },
@@ -84,14 +85,7 @@ export default defineConfig({
             items: [
               { text: 'Introducción', link: '/src/probability/continous-distributions/introduction' },
               { text: 'Normal', link: '/src/probability/continous-distributions/normal' },
-              {text:'Aproximación Normal',
-                collapsed: true,
-                items: [
-                  { text: 'Aproximación binomial a la normal', link: '/src/probability/continous-distributions/normal-approximation/de-moivre-laplace.md' },
-                  { text: 'Binomial', link: '/src/probability/discrete-distributions/binomial' },
-                  { text: 'Poisson', link: '/src/probability/discrete-distributions/poisson' },
-                  { text: 'Hipergeométrica', link: '/src/probability/discrete-distributions/hypergeometric' }
-              ]},
+              { text: 'Aproximación Normal', link: '/src/probability/continous-distributions/normal-approximation' },
           ]},
         ]
       },
