@@ -104,7 +104,7 @@ export default defineConfig({
           {text:'Estimación',
             collapsed: true,
             items: [
-              { text: 'Introducción', link: 'src/inference/Estimacion/Introducion' },
+              { text: 'Introducción', link: '/src/inference/Estimacion/Introducion' },
               { text: 'Estimación puntual', link: '/src/inference/Estimacion/EstimacionPuntual' },
               { text: 'Estimación por Intervalo-media', link: '/src/inference/Estimacion/EstimacionIntMedia' },
               { text: 'Estimación por diferencia de medias', link: '/src/inference/Estimacion/EstimacionDifMedias' }
@@ -112,11 +112,11 @@ export default defineConfig({
           {text:'Contraste de hipótesis',
             collapsed: true,
             items: [
-              { text: 'Introducción', link: 'src/inference/ContrasteHipotesis/Introduccion' },
-              { text: 'Contraste para la media', link: 'src/inference/ContrasteHipotesis/ContrasteMedia' },
-              { text: 'Contraste para la diferenccia de medias', link: 'src/inference/ContrasteHipotesis/ContrasteDifMedias' },
-              { text: 'Contraste para la diferencia de proporciones', link: 'src/inference/ContrasteHipotesis/ContrasteDifProporciones' }
-          ]},
+              { text: 'Introducción', link: '/src/inference/ContrasteHipotesis/Introduccion' },
+              { text: 'Contraste para la media', link: '/src/inference/ContrasteHipotesis/ContrasteMedia' },
+              { text: 'Contraste para la diferencia de medias', link: '/src/inference/ContrasteHipotesis/ContrasteDifMedias' },
+              { text: 'Contraste para la diferencia de proporciones', link: '/src/inference/ContrasteHipotesis/ContrasteDifProporciones' }
+          ]}
         ]
       }
     ],
